@@ -6,7 +6,7 @@ from aiogram.types.message import ContentType
 
 from utils import *
 
-bot = Bot(token='ВСТАВЬТЕ СВОЙ ТОКЕН', parse_mode=types.ParseMode.HTML)
+bot = Bot(token='5996132555:AAHqqyPEGZPMqal8p2d9tilREqhal3OzOjE', parse_mode=types.ParseMode.HTML)
 storage = MemoryStorage()
 dp = Dispatcher(bot, storage=storage)
 curdir = Path.cwd().as_posix()
@@ -123,6 +123,6 @@ async def handle_translate_text(message: types.Message, state):
 
 
 if __name__ == '__main__':
-    print('Бот запущен!')
+    print('bot running')
     executor.start_polling(dp, skip_updates=False, timeout=100)
 

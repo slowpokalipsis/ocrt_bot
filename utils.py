@@ -23,8 +23,8 @@ async def getFlagIndex(region):
     return flag, flagindex
 
 async def processImage(uid, lang, dir):
-    text = pytesseract.image_to_string(Image.open(f'{uid}_photo.jpg'), lang=lang)
-    Path(f'{dir}/userpic/{uid}_photo.jpg').unlink() # удаление картинки
+    text = pytesseract.image_to_string(Image.open(f'{dir}/userpic/{uid}_photo.jpg'), lang=lang)
+    Path(f'{dir}/userpic/{uid}_photo.jpg').unlink() # delete picture
     return text
 
 async def translateText(inp):
