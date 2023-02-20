@@ -6,7 +6,7 @@ from aiogram.types.message import ContentType
 
 from utils import *
 
-bot = Bot(token='5996132555:AAHqqyPEGZPMqal8p2d9tilREqhal3OzOjE', parse_mode=types.ParseMode.HTML)
+bot = Bot(token='GET YOUR OWN TOKEN FROM tg: @botfather', parse_mode=types.ParseMode.HTML)
 storage = MemoryStorage()
 dp = Dispatcher(bot, storage=storage)
 curdir = Path.cwd().as_posix()
